@@ -1,0 +1,21 @@
+# ignore files related to the apiary gem
+.ruby-version
+node_modules
+# ignore reports
+*.html
+report.md
+!README.md
+# ignore dredd dump
+results.json
+# all apib execpt the main one, so segments can be pulled out
+# for development and/or running dredd against
+*.apib
+!apiary.apib
+
+
+/blueprint.md
+
+/apiary.apib
+
+/npm-debug.log
+/.project

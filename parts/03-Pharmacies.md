@@ -2,7 +2,7 @@
 
 This endpoint returns pharmacies filtered by location, company, and/or drug.
 
-## Pharmacy Collection [/pharmacies/{?company,radius,zipCode,latitude,longitude,drug,updatedSince,page,perPage}]
+## Pharmacy Collection [/pharmacies/{?radius,zipCode,drug,page,perPage}]
 
 ### List Pharmacies [GET]
 
@@ -24,7 +24,7 @@ This endpoint returns pharmacies filtered by location, company, and/or drug.
             {
              "pharmacies":  [
                 {
-                  "id": "<<??someUniqueIdentifier??>>",
+                  "npi": "Pharmacy NPI",
                   "name": "CVS Pharmacy at Mayfair Blvd",
                   "pharmacy": "CVS Pharmacy #2506",
                   "phoneNumber": "(555) 555-5555",
@@ -56,7 +56,7 @@ This endpoint returns pharmacies filtered by location, company, and/or drug.
                     "type": "object",
                     "required": true,
                     "properties":{
-                      "id": {
+                      "npi": {
                         "type": "string",
                         "required": true
                       },

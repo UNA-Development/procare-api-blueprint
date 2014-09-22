@@ -35,8 +35,7 @@ This endpoint returns pharmacies filtered by location, company, and/or drug.
                   "drugs": [
                      {
                       "ndc": "0002-7510-01",
-                      "marketPrice": "22.00",
-                      "discountPrice": "17.00"
+                      "price": "17.00"
                     }
                   ]
                 }
@@ -100,11 +99,7 @@ This endpoint returns pharmacies filtered by location, company, and/or drug.
                               "type":"string",
                               "required":true
                             },
-                            "marketPrice": {
-                              "type":"string",
-                              "required":true
-                            },
-                            "discountPrice": {
+                            "price": {
                               "type":"string",
                               "required":true
                             }

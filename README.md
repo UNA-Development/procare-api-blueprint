@@ -50,7 +50,7 @@ The blueprint is built from the files in `/parts`, and are concatenated in file-
 4. Run tests against API
 
    ``` bash
-   $ grunt test -i parts/08-Appointments.md -e http://localhost:5000/
+   $ grunt test -i parts/02-Authentication.md -e http://localhost:5000/
    ```
 
 5. Check that full document merges properly
@@ -86,7 +86,7 @@ By default (no flags), the document generated uses the contents of `./blueprint.
 ### View Single File Generated Docs
 
    ``` bash
-   $ grunt docs -i ./parts/07-Offices.md
+   $ grunt docs -i ./parts/02-Authentication.md
    ```
 
 ### Options
@@ -110,7 +110,7 @@ By default, the mock server starts up with the contents of `./blueprint.md`.
 ### Run Single File Mock Server
 
    ``` bash
-   $ grunt mock -i ./parts/07-Offices.md
+   $ grunt mock -i ./parts/02-Authentication.md
    ```
 
 ### Options
@@ -132,7 +132,7 @@ By default, the test command points to `http://localhost:3001`.
 ### Run Subset of Tests Against a Live Server
 
    ``` bash
-   $ grunt test -i ./parts/07-Offices.md -e https://api.procarerx.com/
+   $ grunt test -i ./parts/02-Authentication.md -e https://api.procarerx.com/
    ```
 
 ### Options

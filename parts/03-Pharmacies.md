@@ -10,6 +10,7 @@ This endpoint returns pharmacies filtered by location, company, and/or drug.
       + radius (required, number, `3.5`) ... A decimal number of miles to search from a zipcode.
       + zipCode (required, integer, `70809`) ... A zipcode epicenter of the search.
       + drug (required, string, `"0002-7510-01`) ... An NDC to search pharmacies by. May be passed multiple times in the querystring parameters (i.e. `drug="0002-7510-01&drug="0002-7510-17`). Only pharmacies that offer these drugs will be returned in the results.
+      + quantity = 1 (optional, number, `1`) ... The quantity to search for.
       + page = `1` (optional, number, `1`) ... The page to retrieve. Defaults to `1`.
       + perPage = `10` (optional, number, `10`) ... The number of results per page. Defaults to `10`.
 

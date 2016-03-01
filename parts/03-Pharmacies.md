@@ -13,7 +13,7 @@ This endpoint returns pharmacies filtered by location, company, and/or drug.
       + quantity = 1 (optional, number, `1`) ... The quantity to search for.
       + page = `1` (optional, number, `1`) ... The page to retrieve. Defaults to `1`.
       + perPage = `10` (optional, number, `10`) ... The number of results per page. Defaults to `10`.
-      + cliendId (required, string, `secret-credentials`) ... The Procare-distributed API credentials.
+      + clientId (required, string, `secret-credentials`) ... The Procare-distributed API credentials.
 
 + Response 200 (application/json)
 

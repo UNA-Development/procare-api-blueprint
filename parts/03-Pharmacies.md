@@ -9,7 +9,7 @@ This endpoint returns pharmacy prices filtered by location, drug, and optionally
 + Parameters
       + radius (required, number, `3.5`) ... A decimal number of miles to search from a zipcode.
       + zipCode (required, integer, `70809`) ... A zipcode epicenter of the search.
-      + ndclist (required, string, `00003421511,00003421521,00003421531`) ... A comma-separated list of drug NDCs to search pharmacies for.
+      + ndclist (required, string, `00003421511,00003421521,00003421531`) ... A comma-separated list of drug NDCs (normalized 11-digit form) to search pharmacies for.
       + npilist (optional, string, `1679941827,1841467594`) ... A comma-separated list of pharmacy NPIs to filter by.
       + quantity = 1 (optional, number, `1`) ... The quantity to search for. Multiplies the returned prices by this amount.
       + page = `1` (optional, number, `1`) ... The page to retrieve. Defaults to `1`.

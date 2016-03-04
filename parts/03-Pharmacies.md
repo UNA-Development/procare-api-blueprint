@@ -36,7 +36,7 @@ This endpoint returns pharmacy prices filtered by location, drug, and optionally
                   "city": "El Dorado",
                   "state": "GA",
                   "zipCode": "55555",
-                  "ndc": "0002-7510-01",
+                  "ndc": "00003421511",
                   "price": "17.00",
                 }
               ]

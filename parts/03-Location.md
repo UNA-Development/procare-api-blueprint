@@ -1,8 +1,10 @@
-# Pharmacies Endpoint
+# Location Endpoint
 
-This endpoint returns pharmacy prices filtered by location, drug, and optionally pharmacy.
+This endpoint returns pharmacy prices and information for a location, filtered by drug, and optionally quantity or pharmacy.
 
-## Pharmacy Collection [/pharmacies/{?radius,zipCode,quantity,ndclist,npilist,page,perPage}]
+**URL**: https://pharmacylocationservices.procarerx.com/Pharmacy/PharmacyPricing
+
+## Pharmacy Collection [/PharmacyPricing/{?radius,zipCode,quantity,ndclist,npilist,page,perPage,clientId}]
 
 ### List Pharmacies [GET]
 
@@ -49,7 +51,7 @@ This endpoint returns pharmacy prices filtered by location, drug, and optionally
               "$schema": "http://json-schema.org/draft-03/schema",
               "required": true,
               "properties":{
-                "pharmacies": {
+                "DrugPricing": {
                   "type": "array",
                   "required": true,
                   "items": {
